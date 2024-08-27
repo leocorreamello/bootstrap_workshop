@@ -1,0 +1,23 @@
+main{
+    grid-area: main;
+    background-color: green;
+}
+aside{
+    grid-area: aside;
+    background-color: yellow;
+}
+footer{
+    grid-area: footer;
+    background-color: lightgray;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: repeat(6, 100px);
+    gap: 10px;
+    grid-template-areas: 
+    "main main aside"
+    "main main aside"
+    "footer footer footer";
+}
